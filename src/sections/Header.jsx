@@ -18,9 +18,7 @@ const Header = () => {
     };
   }, []);
 
-  const NavLink = ({ title }) => {
-    console.log(title)
-    return (
+  const NavLink = ({ title }) => (
     <LinkScroll
       onClick={() => setIsOpen(false)}
       to={title}
@@ -32,7 +30,7 @@ const Header = () => {
     >
       {title}
     </LinkScroll>
-  )};
+  );
 
   return (
     <header
